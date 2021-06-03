@@ -29,4 +29,5 @@ float wallis_pi(int n) {
   int i =n;
   if (i!=0)
     pi = 2*((4*i*i)/((4*i*i)-1)) * wallis_pi(i-1);
+  return pi;
 }  
