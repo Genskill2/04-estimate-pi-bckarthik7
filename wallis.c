@@ -29,6 +29,6 @@ float wallis_pi(int n) {
   float pib=1.0,pi;
   for (float i=1.0; i<=n;i++)
     pib = pi*((4.0*i*i)/((4.0*i*i)-1.0));
-    pi=pib/2.0;
+    pi=pib*2.0;
   return pi;
 }  
