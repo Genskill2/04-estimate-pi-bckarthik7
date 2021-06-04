@@ -39,7 +39,8 @@ int main(void) {
   }
 }
 float mc_pi(int n) {
-  int c =0;
+  float c =0.0;
+  float n1 = (float)n;
   float x, y, pif;
   for (int i=0; i<n; i++) {
     x = frandom();
@@ -47,6 +48,6 @@ float mc_pi(int n) {
     if ((pow(x,2)+pow(y,2)-x-y+0.25)<=0)
         c++;
   }
-pif = 4.0*c/n;
+pif = 4.0*c/n1;
 return pif;
 }
