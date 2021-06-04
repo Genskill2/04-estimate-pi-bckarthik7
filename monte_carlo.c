@@ -40,14 +40,13 @@ int main(void) {
 }
 float mc_pi(int n) {
   int c =0;
-  float x, y, pi;
+  float x, y, pif;
   for (int i=0; i<n; i++) {
     x = frandom();
     y = frandom();
-    if ((pow(x,2)+pow(y,2)-x-y)<=0.5)
+    if ((pow(x,2)+pow(y,2)-x-y+0.25)<=0)
         c++;
   }
-pi = 4*c/n;
-return pi;
+pif = 4.0*c/n;
+return pif;
 }
-
